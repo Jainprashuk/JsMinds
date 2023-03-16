@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script></script>
+
+</head>
+<body>
+  <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg> -->
+        <i class="fa-brands fa-js fa-3x fa-border-radius fa-inverse"></i>
+        <!-- <img width="50px" src="./photos/logof.png"alt=""> -->
+        <span class=" text-2xl text-white border-2 border-gray-100 pl-1 py-1 pr-2">Minds</span>
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center ">
+        <a href="../index.html" class="mr-5 hover:text-gray-400 text-[#e2e8f0] ">Home</a>
+        <a href="../content.html" class="mr-5 hover:text-gray-400 text-[#e2e8f0]">Docs</a>
+        <a href="../devlopersCorner.html"
+          class=" dev_corner mr-5 hover:text-gray-400 text-[#e2e8f0] border-r-2">Devlopers corner&nbsp;&nbsp;</a>
+        <!-- <a class="mr-5 hover:text-gray-900 text-[#e2e8f0]">Fourth Link</a> -->
+      </nav>
+
+      <a href="https://github.com/Jainprashuk" target="_blank">
+        <button
+          class="nav_but inline-flex items-center bg-gray-100 border-0  focus:outline-none py-1 px-1 hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mx-1"><i
+            class="fa-brands fa-github fa-2x"></i> </button>
+      </a>
+
+      <a href="https://www.linkedin.com/in/prashuk-jain-937a12212" target="_blank">
+        <button
+          class="nav_but inline-flex items-center bg-gray-100 border-0  focus:outline-none py-1 px-1 hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mx-1"><i
+            class="fa-brands fa-linkedin-in fa-2x"></i> </button>
+      </a>
+
+      <a href="https://jainprashuk.github.io/personal_portfolio_29/index.html" target="_blank">
+        <button
+          class="nav_but inline-flex items-center bg-gray-100 border-0  focus:outline-none py-1 px-1 hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mx-1">
+          <i class="fa-solid fa-earth-americas fa-2x"></i> </a></button>
+      </a>
+
+
+
+
+    </div>
+
+  </header>
+
+  <div class="px-8 py-2 dark:bg-gray-300 dark:text-gray-100 w-11/12 mx-auto rounded-full mt-5 mb-5">
+    <div class="flex items-center mx-auto container justify-center md:justify-between py-2 ">
+        <div>
+            <i class="text-gray-900 fa-solid fa-triangle-exclamation"></i>
+            <span class="font-bold text-gray-900 px-4">    It is Recommended to practice while you learn </span>
+        </div>
+        <a href="../PracticeCompiler.html" rel="noopener noreferrer" class="items-center gap-2 hidden md:flex">
+            <i class=" text-gray-900 fa-solid fa-2x fa-keyboard"></i>
+            <span class=" text-gray-900 focus-visible:underline">practice Now</span>
+        </a>
+    </div>
+</div>
+
+      <div class="content">
+        <h1 class="text-5xl text-center ">Data Types</h1>
+        
+        <section class="dark:bg-white dark:text-gray-100 mt-1">
+            <div class="container flex flex-col-reverse mx-auto lg:flex-row">
+                <div class="flex flex-col px-6 py-8 space-y-6 rounded-sm sm:p-8 lg:p-12 lg:w-1/2 xl:w-2/5 dark:bg-white dark:text-gray-900">
+                    <div class="flex space-x-2 sm:space-x-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="flex-shrink-0 w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                        </svg>
+                        <div class="space-y-2">
+                            <p class="text-lg font-small leading-snug">In computer programming, data types are a classification or categorization of data items based on the type of values they represent. 
+                                <br> Every programming language has a set of data types, which are used to define the kind of data that can be stored in a variable or passed as an argument to a function. <br> These data types specify the type of operations that can be performed on the data, the amount of memory required to store the data, and the range of values that the data can take.</p>
+                            <!-- <p class="leading-snug">Praesentium ea et neque distinctio quas eius repudiandae quaerat obcaecati voluptatem similique!</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 xl:w-3/5 bg-white">
+                    <div class="flex items-center justify-center p-4 md:p-8 lg:p-12">
+                        <img src="../meme/datatype.jpg" alt="" class=" rounded-lg shadow-lg dark:bg-white aspect-video sm:min-h-96 w-full">
+                    </div>
+                </div>
+            </div>
+
+            <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded m-auto " alt="hero" src="../photos/Data Types.png">
+            
+            <section class="text-gray-600 body-font">
+                <div class="container px-5 py-1 mx-auto">
+                  <div class="flex flex-wrap -m-4">
+                    <div class="p-4 md:w-1/3">
+                      <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden p-1">
+                        <img class="lg:h-48 md:h-36 w-full object-cover object-center rounded-lg" src="../photos/numbers.jpg" alt="blog">
+                        <div class="p-6">
+                          <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">~ PRIMITIVE ~</h2>
+                          <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Number</h1>
+                          <p class="leading-relaxed mb-3">All JavaScript numbers are stored as decimal numbers (floating point).
+
+                            Numbers can be written with, or without decimals:</p>
+                          <div class="flex items-center flex-wrap ">
+                            <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0 " href="../data_type_codes/number.html" >Practice Now
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                      <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                        <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="../photos/" alt="blog">
+                        <div class="p-6">
+                          <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">~ PRIMITIVE ~</h2>
+                          <h1 class="title-font text-lg font-medium text-gray-900 mb-3">String</h1>
+                          <p class="leading-relaxed mb-3">A string (or a text string) is a series of characters like "John Doe".
+
+                            Strings are written with quotes. You can use single or double quotes:</p>
+                          <div class="flex items-center flex-wrap">
+                            <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="../data_type_codes/string.html">Learn And Practice More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                      <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                        <img class="lg:h-48 md:h-36 w-full object-cover object-center p-1 rouded-lg" src="../photos/boolean.jpg" alt="blog">
+                        <div class="p-6">
+                          <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">~ PRIMITIVE ~</h2>
+                          <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Boolean</h1>
+                          <p class="leading-relaxed mb-3">Booleans can only have two values: true or false.</p>
+                          <div class="flex items-center flex-wrap ">
+                            <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="../data_type_codes/Boolean.html">Practice Now
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="text-gray-600 body-font">
+                <div class="container px-5 py-1 mx-auto">
+                  <div class="flex flex-wrap -m-4">
+                    <div class="p-4 md:w-1/3">
+                      <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                        <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="../photos/null.png" alt="blog">
+                        <div class="p-6">
+                          <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">~ PRIMITIVE ~</h2>
+                          <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Null</h1>
+                          <p class="leading-relaxed mb-3"> It is the intentional absence of the value. It is one of the primitive values of JavaScript . Null: Object </p>
+                          <div class="flex items-center flex-wrap ">
+                            <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="../data_type_codes/null_undefined.html">Practice Now
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                      <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden pd-3">
+                        <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="../photos/undefined.jpg" alt="blog">
+                        <div class="p-6">
+                          <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">~ PRIMITIVE ~</h2>
+                          <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Undefined</h1>
+                          <p class="leading-relaxed mb-3">It means the value does not exist in the compiler. It is the global object. Undefined means a variable has been declared but has yet not been assigned a value.
+
+                          </p>
+                          <div class="flex items-center flex-wrap">
+                            <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="../data_type_codes/null_undefined.html">Practice Now
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                      <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                        <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="../photos/bigint.jpg" alt="blog">
+                        <div class="p-6">
+                          <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">~ PRIMITIVE ~</h2>
+                          <h1 class="title-font text-lg font-medium text-gray-900 mb-3">BigInt</h1>
+                          <p class="leading-relaxed mb-3">JavaScript BigInt is a new datatype (2020) that can be used to store integer values that are too big to be represented by a normal JavaScript Number.</p>
+                          <div class="flex items-center flex-wrap ">
+                            <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="../data_type_codes/big_int.html">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="text-gray-600 body-font">
+                <div class="container px-5 py-1 mx-auto">
+                  <div class="flex flex-wrap -m-4">
+                    <div class="p-4 md:w-1/3">
+                      <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                        <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="../photos/objects.jpg" alt="blog">
+                        <div class="p-6">
+                          <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">~ NON-PRIMITIVE ~</h2>
+                          <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Objects</h1>
+                          <p class="leading-relaxed mb-3">JavaScript objects are written with curly braces {}.
+
+                            Object properties are written as name:value pairs, separated by commas.</p>
+                          <div class="flex items-center flex-wrap ">
+                            <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="./objects.html" >Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                      <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                        <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/721x401" alt="blog">
+                        <div class="p-6">
+                          <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">~ NON-PRIMITIVE ~</h2>
+                          <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Arrays</h1>
+                          <p class="leading-relaxed mb-3">JavaScript arrays are written with square brackets.
+
+                            Array items are separated by commas.</p>
+                          <div class="flex items-center flex-wrap">
+                            <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="./arrays.html">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+        </section>
+        
+        
+      </div>
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+    <script src="https://kit.fontawesome.com/5a445330f4.js" crossorigin="anonymous"></script>
+</body>
+</html>
