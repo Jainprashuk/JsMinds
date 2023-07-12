@@ -20,6 +20,12 @@
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
       z-index: 9999;
     }
+    #close-btn {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      cursor: pointer;
+    }
   </style>
   <script>
     window.addEventListener('DOMContentLoaded', function() {
@@ -27,8 +33,13 @@
       if (isMobile) {
         var popup = document.createElement('div');
         popup.id = 'popup';
-        popup.innerHTML = '<p>For a great experience, use a desktop.</p>';
+        popup.innerHTML = '<p>For a great experience, use a desktop.</p><span id="close-btn">X</span>';
         document.body.appendChild(popup);
+
+        var closeBtn = document.getElementById('close-btn');
+        closeBtn.addEventListener('click', function() {
+          popup.style.display = 'none';
+        });
       }
     });
   </script>
