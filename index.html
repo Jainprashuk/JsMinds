@@ -7,6 +7,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Javascript</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    #popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      z-index: 9999;
+    }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      if (isMobile) {
+        var popup = document.createElement('div');
+        popup.id = 'popup';
+        popup.innerHTML = '<p>For a great experience, use a desktop.</p>';
+        document.body.appendChild(popup);
+      }
+    });
+  </script>
+  
   <script src="https://cdn.tailwindcss.com"></script>
 
 
