@@ -1,2 +1,2 @@
-# JsMinds
-javascript documentation for begginer with the help of html,css and js
+# JsMinds.com
+prototype website of JavaScript documentation using HTML, CSS and TAILWIND to make learning easier and interesting.

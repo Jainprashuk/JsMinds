@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function copyToClipboardod1() {
+            var myDivText = document.getElementById("myDivod1").innerText;
+            navigator.clipboard.writeText(myDivText)
+                .then(() => {
+                    console.log('Text copied to clipboard');
+                    document.getElementById("copyBtnod1").innerText = "Copied"
+                })
+                .catch((error) => {
+                    console.error('Could not copy text: ', error);
+                });
+        }
+    </script>
+
+</head>
+
+
+
+<body class="pb-3">
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg> -->
+                <i class="fa-brands fa-js fa-3x fa-border-radius fa-inverse"></i>
+                <!-- <img width="50px" src="./photos/logof.png"alt=""> -->
+                <span class=" text-2xl text-white border-2 border-gray-100 pl-1 py-1 pr-2">Minds</span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center ">
+                <a href="../index.html" class="mr-5 hover:text-gray-400 text-[#e2e8f0] ">Home</a>
+                <a href="../content.html" class="mr-5 hover:text-gray-400 text-[#e2e8f0]">Docs</a>
+                <a href="../devlopersCorner.html"
+                    class=" dev_corner mr-5 hover:text-gray-400 text-[#e2e8f0] border-r-2">Devlopers
+                    corner&nbsp;&nbsp;</a>
+                <!-- <a class="mr-5 hover:text-gray-900 text-[#e2e8f0]">Fourth Link</a> -->
+            </nav>
+
+            <a href="https://github.com/Jainprashuk" target="_blank">
+                <button
+                    class="nav_but inline-flex items-center bg-gray-100 border-0  focus:outline-none py-1 px-1 hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mx-1"><i
+                        class="fa-brands fa-github fa-2x"></i> </button>
+            </a>
+
+            <a href="https://www.linkedin.com/in/prashuk-jain-937a12212" target="_blank">
+                <button
+                    class="nav_but inline-flex items-center bg-gray-100 border-0  focus:outline-none py-1 px-1 hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mx-1"><i
+                        class="fa-brands fa-linkedin-in fa-2x"></i> </button>
+            </a>
+
+            <a href="https://jainprashuk.github.io/personal_portfolio_29/index.html" target="_blank">
+                <button
+                    class="nav_but inline-flex items-center bg-gray-100 border-0  focus:outline-none py-1 px-1 hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mx-1">
+                    <i class="fa-solid fa-earth-americas fa-2x"></i> </a></button>
+            </a>
+
+
+
+
+        </div>
+
+    </header>
+
+    <div class="px-8 py-2 bg-gray-300 text-gray-100 w-11/12 mx-auto rounded-full mt-5 mb-5">
+        <div class="flex items-center mx-auto container justify-center md:justify-between py-2 ">
+            <div>
+                <i class="text-gray-900 fa-solid fa-triangle-exclamation"></i>
+                <span class="font-bold text-gray-900 px-4"> It is Recommended to practice while you learn </span>
+            </div>
+            <a href="../PracticeCompiler.html" rel="noopener noreferrer" class="items-center gap-2 hidden md:flex">
+                <i class=" text-gray-900 fa-solid fa-2x fa-keyboard"></i>
+                <span class=" text-gray-900 focus-visible:underline">practice Now</span>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="w-3/4 h-full bg-gray-100 mx-auto p-8 rounded">
+        <h1 class="text-6xl font-bold text-center mb-10">Destructing operator</h1>
+        <p class="text-center">Destructuring Assignment is a JavaScript expression that allows to unpack values from
+            arrays, or properties from objects, into distinct variables data can be extracted from arrays, objects,
+            nested objects and assigning to variables. In Destructuring Assignment on the left-hand side defined that
+            which value should be unpacked from the sourced variable.</p>
+
+
+        <section class="text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-wrap -m-4">
+                    <div class="p-4 md:w-1/2 w-full bg-gray-800">
+                        <div class="h-full bg-gray-100 p-8 rounded bg-gray-300">
+                            <!--  check1 -->
+                            <h3 class="text-gray-900 text-center text-xl">Traditional Way</h3>
+                            <br><br>
+                            <p>let <span class="text-red-600">array1</span>= [1, 2, 3, 4, 5];</p>
+                            <p>console.<span class="text-red-600">log</span>(array1[0]); <br>
+                                console.<span class="text-red-600">log</span>(array1[1]); <br>
+                                console.<span class="text-red-600">log</span>(array1[2]); <br>
+                                console.<span class="text-red-600">log</span>(array1[3]); <br>
+                                console.<span class="text-red-600">log</span>(array1[4]);</p>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/2 w-full bg-gray-800 ">
+                        <div class="h-full bg-gray-100 p-8 rounded bg-gray-300">
+                            <!-- check 2 -->
+                            <h3 class="text-gray-900 text-center text-xl">By Destructing operator</h3>
+                            <br><br>
+                            <p>let <span class="text-red-600">array1</span> = [1, 2, 3, 4, 5];</p><br>
+                            <p>let <span class="text-red-600">[</span> indexOne, indexTwo, indexThree, indexFour,
+                                indexFive <span class="text-red-600">]</span> = array1; <br></p>
+                            console.<span class="text-red-600">log</span>(indexOne) // output : 1<br>
+                            console.<span class="text-red-600">log</span>(indexTwo) // output : 2<br>
+                            console.<span class="text-red-600">log</span>(indexThree) // output : 3<br>
+                            console.<span class="text-red-600">log</span>(indexFour) // output : 4<br>
+                            console.<span class="text-red-600">log</span>(indexFive) // output : 5</p><br>
+                            <p>
+                                <span class="text-blue-700">// if we want to skip one element</span> <br>
+                            <p>let <span class="text-red-600">[</span> indexOne, indexTwo, , indexFour, indexFive <span
+                                    class="text-red-600">]</span> = array1; <br></p>
+                            console.<span class="text-red-600">log</span>(indexOne) // output : 1<br>
+                            console.<span class="text-red-600">log</span>(indexTwo) // output : 2<br>
+                            console.<span class="text-red-600">log</span>(indexFour) // output : 4<br>
+                            console.<span class="text-red-600">log</span>(indexFive) // output : 5</p><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h1 class="mb-6 mt-10 text-2xl font-bold leading-none text-center sm:text-3xl text-gray-900"> <i
+                class="fa-solid fa-circle fa-0.5x"></i> Object destructuring :</h1>
+        <div
+            class="flex flex-col max-w-lg p-6  overflow-hidden rounded-lg shadow-md bg-gray-900 text-gray-100 mx-auto ">
+
+            <div id="myDivod1">
+                <p class="text-yellow-600"> Example 1 : </p><br>
+            <p> <span class="text-red-600">({ x, y} = { x: 10, y: 20 }); </span><br>
+                console.log(x); // 10 <br>
+                console.log(y); // 20</p> <br> <br>
+
+            <p class="text-yellow-600"> Example 2 : </p><br>
+            <p>let <span class="text-red-600">object</span> = { <br>
+                name: "Nishant", <br>
+                age: 24, <br>
+                height: '20 meters', <br>
+                weight: '70 KG' <br>
+                } <br>
+                <br>
+                let <span class="text-red-600">{ name, salary, weight }</span> = object; <br>
+                <br>
+                console.log(name) <br>
+                console.log(salary) <br>
+                console.log(weight)
+            </p> <br>
+            </div>
+            
+        <button onclick="copyToClipboardod1()" type="button" id="copyBtnod1" class=" mt-6 px-8 py-3 font-semibold rounded bg-gray-300 text-gray-800  ">Copy</button>
+         
+        </div>
+
+
+        <div class="mt-8">
+            <h1 class="text-6xl font-bold text-center mb-10 mt-10">Spread operator</h1>
+            <p class="text-center">The Spread operator allows an iterable to expand in places where 0+ arguments are
+                expected. It is mostly used in the variable array where there is more than 1 value is expected. It
+                allows us the privilege to obtain a list of parameters from an array.
+                spread operator in JavaScript is denoted by three dots.
+            </p>
+            <section class="text-gray-600 body-font">
+                <div class="container px-5 py-24 mx-auto">
+                    <div class="flex flex-wrap -m-4">
+                        <div class="p-4 md:w-1/2 w-full bg-gray-800">
+                            <div class="h-full bg-gray-100 p-8 rounded bg-gray-300">
+                                <!--  check1 -->
+                                <h3 class="text-gray-900 text-center text-xl">Traditional Way</h3>
+                                <br><br>
+                                <p>
+                                    let <span class="text-red-600">array1</span> = [1, 2, 3, 4, 5] <br>
+                                    let <span class="text-red-600">array2</span> = [6, 7, 8, 9, 10] <br>
+                                    <br>
+                                    let array3 = array1.<span class="text-red-600">concat</span>(array2); <br>
+                                    console.log(array3) <br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-4 md:w-1/2 w-full bg-gray-800 ">
+                            <div class="h-full bg-gray-100 p-8 rounded bg-gray-300">
+                                <!-- check 2 -->
+                                <h3 class="text-gray-900 text-center text-xl">By Destructing operator</h3>
+                                <br><br>
+                                <p>
+
+                                <p class="text-yellow-600"> Example 1 : </p>
+                                let <span class="text-red-600">array1</span> = [1, 2, 3, 4, 5] <br>
+                                let <span class="text-red-600">array2</span> = [6, 7, 8, 9, 10] <br>
+                                <br>
+                                let array3 = [<span class="text-red-600">...</span>array1, <span
+                                    class="text-red-600">...</span>array2] <br>
+                                console.log(array3) <br>
+                                </p>
+
+                                <br>
+                                <br>
+
+
+                                <p>
+
+                                <p class="text-yellow-600"> Example 2 : </p>
+                                let <span class="text-red-600">array1</span> = [1, 2, 3, 4, 5] <br>
+                                let <span class="text-red-600">array2</span> = [6, 7, ...array1, 8, 9, 10] <br>
+                                <br>
+                                console.log(array2); <br>
+                                </p>
+
+
+                                <br><br>
+
+                                <p class="text-yellow-600"> Example 3 : </p>
+                                <p>
+                                    let <span class="text-red-600">object1</span> = { <br>
+                                    firstName: "Nishant", <br>
+                                    age: 24, <br>
+                                    salary: 300,<br>
+                                    } <br>
+                                    <br>
+                                    let <span class="text-red-600">object2</span> = { <br>
+                                    lastName: "Kumar",<br>
+                                    height: '20 meters',<br>
+                                    weight: '70 KG'<br>
+                                    } <br>
+                                    <br>
+                                    let object3 = <span class="text-red-600">...</span>object1, <span
+                                        class="text-red-600">...</span>object2<br>
+                                    console.log(object3);<br>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/5a445330f4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../style.css"> -->
+    <link rel="stylesheet" href="contentsample.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg> -->
+            <i class="fa-brands fa-js fa-4x fa-border-radius fa-inverse"></i>
+            <!-- <img width="50px" src="./photos/logof.png"alt=""> -->
+            <span class=" text-xl text-white border-2 border-gray-100 pl-3 py-3 pr-3">Minds</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center ">
+            <a href="index.html" class="mr-5 hover:text-gray-400 text-[#e2e8f0] ">Home</a>
+            <a href="content.html" class="mr-5 hover:text-gray-400 text-[#e2e8f0]">Docs</a>
+            <a href="./devlopersCorner.html"
+              class=" dev_corner mr-5 hover:text-gray-400 text-[#e2e8f0] border-r-2">Devlopers corner&nbsp;&nbsp;</a>
+            <!-- <a class="mr-5 hover:text-gray-900 text-[#e2e8f0]">Fourth Link</a> -->
+          </nav>
+    
+          <a href="https://github.com/Jainprashuk" target="_blank">
+            <button
+              class="nav_but inline-flex items-center bg-gray-100 border-0  focus:outline-none py-1 px-1 hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mx-1"><i
+                class="fa-brands fa-github fa-2x"></i> </button>
+          </a>
+    
+          <a href="https://www.linkedin.com/in/prashuk-jain-937a12212" target="_blank">
+            <button
+              class="nav_but inline-flex items-center bg-gray-100 border-0  focus:outline-none py-1 px-1 hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mx-1"><i
+                class="fa-brands fa-linkedin-in fa-2x"></i> </button>
+          </a>
+    
+          <a href="portfolio.html" target="_blank">
+            <button
+              class="nav_but inline-flex items-center bg-gray-100 border-0  focus:outline-none py-1 px-1 hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mx-1">
+              <i class="fa-solid fa-earth-americas fa-2x"></i> </a></button>
+          </a>
+    
+    
+    
+    
+        </div>
+    
+      </header>
+
+
+    <div class="btn-animated w-1/4 mx-auto rounded-lg">
+        <label for="Toggle4"
+            class="inline-flex items-center p-3 cursor-pointer bg-gray-300 text-gray-800 rounded-lg">
+            <input id="Toggle4" type="checkbox" class="hidden peer">
+            <a href="contentsample.html"><span class="px-4 py-2 bg-gray-300 peer-checked:bg-violet-400 rounded">
+                Animated
+            </span></a>
+            <a href="content.html"><span class="px-4 py-2 bg-gray-600 peer-checked:bg-gray-300 rounded">
+                Non-Animated
+            </span></a>
+        </label>
+    </div>
+
+
+    <a href="./content.html"><button type="button" id="non-animated"  class=" hidden px-8 py-3 font-semibold rounded bg-gray-100 text-gray-800 ">Non-animated</button></a>
+    
+        
+
+    
+
+
+
+
+
+
+    <section>
+
+        <div class="timeline">
+
+            <!-- 1 -->
+            <div class="container1 left-container">
+                <img src="./photos/js.png" alt="">
+                <div class="text-box">
+                    <a href="./contents/introduction.html">
+                        <button type="button"
+                            class="mx-2 px-8 py-5  font-semibold rounded-full bg-gray-100 text-gray-800 m-1 w-full hover:bg-violet-800 hover:animate-pulse">
+                            Introduction </button>
+                    </a><br>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="container1 right-container">
+                <img src="./photos/js.png" alt="">
+                <div class="text-box">
+                    <a href="./contents/DataTypes.html">
+                        <button type="button"
+                            class="my-3 px-8 py-5 font-semibold rounded-full bg-gray-100 text-gray-800 m-1 w-full hover:bg-violet-800 hover:animate-pulse">
+                            Data Types </button>
+                    </a><br>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="container1 left-container">
+                <img src="./photos/js.png" alt="">
+                <div class="text-box">
+                    <a href="./contents/operators.html">
+                        <button type="button"
+                            class="mx-2 px-8 py-5 font-semibold rounded-full bg-gray-100 text-gray-800 m-1 w-full hover:bg-violet-800 hover:animate-pulse">
+                            operators</button>
+                    </a> <br>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="container1 right-container">
+                <img src="./photos/js.png" alt="">
+                <div class="text-box">
+                    <a href="./contents/conditional.html">
+                        <button type="button"
+                            class="my-3 px-8 py-5 font-semibold rounded-full bg-gray-100 text-gray-800 m-1 w-full hover:bg-violet-800 hover:animate-pulse">
+                            conditional Statement</button>
+                    </a> <br>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+            <!-- 5 -->
+
+            <div class="container1 left-container">
+                <img src="./photos/js.png" alt="">
+                <div class="text-box">
+                    <a href="./contents/loops.html">
+                        <button type="button"
+                            class="mx-2 px-8 py-5 font-semibold rounded-full bg-gray-100 text-gray-800 m-1 w-full hover:bg-violet-800 hover:animate-pulse">
+                            Loops</button>
+                    </a> <br>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+
+
+
+
+            <!-- 6 -->
+            <div class="container1 right-container">
+                <img src="./photos/js.png" alt="">
+                <div class="text-box">
+                    <a href="./contents/function.html">
+                        <button type="button"
+                            class="my-3 px-8 py-5 font-semibold rounded-full bg-gray-100 text-gray-800 m-1 w-full hover:bg-violet-800 hover:animate-pulse">
+                            Functions</button>
+                    </a> <br>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+            <!-- 7 -->
+
+            <div class="container1 left-container">
+                <img src="./photos/js.png" alt="">
+                <div class="text-box">
+                    <a href="./contents/objects.html">
+                        <button type="button"
+                            class="mx-2 px-8 py-5 font-semibold rounded-full bg-gray-100 text-gray-800 m-1 w-full hover:bg-violet-800 hover:animate-pulse">
+                            Objects</button>
+                    </a> <br>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+
+
+
+            <!-- 8 -->
+            <div class="container1 right-container">
+                <img src="./photos/js.png" alt="">
+                <div class="text-box">
+                    <a href="./contents/MathFunctions.html">
+                        <button type="button"
+                            class="my-3 px-8 py-5 font-semibold rounded-full bg-gray-100 text-gray-800 m-1 w-full hover:bg-violet-800 hover:animate-pulse">
+                            Math Function</button>
+                    </a> <br>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+
+            <!-- 9 -->
+            <div class="container1 left-container">
+                <img src="./photos/js.png" alt="">
+                <div class="text-box">
+                    <a href="./contents/higher_order_function.html">
+                        <button type="button"
+                            class="mx-2 px-8 py-5 font-semibold rounded-full bg-gray-100 text-gray-800 m-1 w-full hover:bg-violet-800 hover:animate-pulse">
+                            Heigher order Function</button>
+                    </a> <br>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+
+            <!-- 10 -->
+            <div class="container1 right-container">
+                <img src="./photos/js.png" alt="">
+                <div class="text-box">
+                    <a href="./contents/Reduce_Filter_Map.html">
+                        <button type="button"
+                            class="my-3 px-8 py-5 font-semibold rounded-full bg-gray-100 text-gray-800 m-1 w-full hover:bg-violet-800 hover:animate-pulse">
+                            Reduce , Filter , Map</button>
+                    </a> <br>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+
+
+            <!-- 11 -->
+            <div class="container1 left-container">
+                <img src="./photos/js.png" alt="">
+                <div class="text-box">
+                    <a href="./contents/Date_time.html">
+                        <button type="button"
+                            class="mx-2 px-8 py-5 font-semibold rounded-full bg-gray-100 text-gray-800 m-1 w-full hover:bg-violet-800 hover:animate-pulse">
+                            Date And Time</button>
+                    </a> <br>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+
+            <!-- 12 -->
+            <div class="container1 right-container">
+                <img src="./photos/js.png" alt="">
+                <div class="text-box">
+                    <a href="./contents/type_convertion.html">
+                        <button type="button"
+                            class="my-3 px-8 py-5 font-semibold rounded-full bg-gray-100 text-gray-800 m-1 w-full hover:bg-violet-800 hover:animate-pulse">
+                            Type Conversion</button>
+                    </a> <br>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+
+            <!-- 13 -->
+            <div class="container1 left-container">
+                <img src="./photos/js.png" alt="">
+                <div class="text-box">
+                    <a href="./contents/destructing_spreading.html">
+                        <button type="button"
+                            class="mx-2 px-8 py-5 font-semibold rounded-full bg-gray-100 text-gray-800 m-1 w-full hover:bg-violet-800 hover:animate-pulse">Destructing
+                            And Spreading Operator</button>
+                    </a> <br>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+
+            <!-- 14 -->
+            <div class="container1 right-container">
+                <img src="./photos/js.png" alt="">
+                <div class="text-box">
+                    <a href="./contents/set_map.html">
+                        <button type="button"
+                            class="my-3 px-8 py-5 font-semibold rounded-full bg-gray-100 text-gray-800 m-1 w-full hover:bg-violet-800 hover:animate-pulse">Set
+                            And Map</button>
+                    </a> <br>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+
+            <!-- 15 -->
+            <div class="container1 left-container">
+                <img src="./photos/js.png" alt="">
+                <div class="text-box">
+                    <a href="./contents/rest_new_this_every.html">
+                        <button type="button"
+                            class="mx-2 px-8 py-5 font-semibold rounded-full bg-gray-100 text-gray-800 m-1 w-full hover:bg-violet-800 hover:animate-pulse">Rest
+                            , New , This and Every operator</button>
+                    </a> <br>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+
+            <!-- 16 -->
+            <div class="container1 right-container">
+                <img src="./photos/js.png" alt="">
+                <div class="text-box">
+                    <a href="./contents/get_set.html">
+                        <button type="button"
+                            class="my-3 px-8 py-5 font-semibold rounded-full bg-gray-100 text-gray-800 m-1 w-full hover:bg-violet-800 hover:animate-pulse">Getter
+                            & Setter</button>
+                    </a> <br>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+
+
+            <!-- 17 -->
+            <div class="container1 left-container">
+                <img src="./photos/js.png" alt="">
+                <div class="text-box">
+                    <a href="./contents/classes.html">
+                        <button type="button"
+                            class="mx-2 px-8 py-5 font-semibold rounded-full bg-gray-100 text-gray-800 m-1 w-full hover:bg-violet-800 hover:animate-pulse">Class
+                            in Js</button>
+                    </a> <br>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+
+            <!-- 18 -->
+            <div class="container1 right-container">
+                <img src="./photos/js.png" alt="">
+                <div class="text-box">
+                    <a href="./contents/closure.html">
+                        <button type="button"
+                            class="my-3 px-8 py-5 font-semibold rounded-full bg-gray-100 text-gray-800 m-1 w-full hover:bg-violet-800 hover:animate-pulse">Closure</button>
+                    </a> <br>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+
+            <!-- 19 -->
+            <div class="container1 left-container">
+                <img src="./photos/js.png" alt="">
+                <div class="text-box">
+                    <a href="./contents/Error_handling.html">
+                        <button type="button"
+                            class="mx-2 px-8 py-5 font-semibold rounded-full bg-gray-100 text-gray-800 m-1 w-full hover:bg-violet-800 hover:animate-pulse">Error
+                            Handling (Exception Handling Statements)</button>
+                    </a> <br>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+
+            <!-- 20 -->
+            <div class="container1 right-container">
+                <img src="./photos/js.png" alt="">
+                <div class="text-box">
+                    <a href="./contents/introduction.html">
+                        <button type="button"
+                            class="my-3 px-8 py-5 font-semibold rounded-full bg-gray-100 text-gray-800 m-1 w-full hover:bg-violet-800 hover:animate-pulse">Hoisting</button>
+                    </a> <br>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+
+            <!-- 21 -->
+            <div class="container1 left-container">
+                <img src="./photos/js.png" alt="">
+                <div class="text-box">
+                    <a href="./contents/introduction.html">
+                        <button type="button"
+                            class="mx-2 px-8 py-5 font-semibold rounded-full bg-gray-100 text-gray-800 m-1 w-full hover:bg-violet-800 hover:animate-pulse">Temporal
+                            Dead Zone</button>
+                    </a> <br>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+            
+              
+
+
+
+
+            <!-- 20 -->
+            <div class="container1 right-container">
+                <img src="./photos/js.png" alt="">
+                <div class="text-box">
+                    <a href="./contents/introduction.html">
+                        <button type="button"
+                            class="my-3 px-8 py-5 font-semibold rounded-full bg-gray-100 text-gray-800 m-1 w-full hover:bg-violet-800 hover:animate-pulse">Inheritance</button>
+                    </a> <br>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+
+            <!-- 21 -->
+            <div class="container1 left-container">
+                <img src="./photos/js.png" alt="">
+                <div class="text-box">
+                    <a href="./contents/introduction.html">
+                        <button type="button"
+                            class="mx-2 px-8 py-5 font-semibold rounded-full bg-gray-100 text-gray-800 m-1 w-full hover:bg-violet-800 hover:animate-pulse">Proto Inheritance</button>
+                    </a> <br>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+            <!-- 20 -->
+            <div class="container1 right-container">
+                <img src="./photos/js.png" alt="">
+                <div class="text-box">
+                    <a href="./contents/introduction.html">
+                        <button type="button"
+                            class="my-3 px-8 py-5 font-semibold rounded-full bg-gray-100 text-gray-800 m-1 w-full hover:bg-violet-800 hover:animate-pulse">Event Loop and Promise </button>
+                    </a> <br>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+
+            <!-- 21 -->
+            <div class="container1 left-container">
+                <img src="./photos/js.png" alt="">
+                <div class="text-box">
+                    <a href="./contents/introduction.html">
+                        <button type="button"
+                            class="mx-2 px-8 py-5 font-semibold rounded-full bg-gray-100 text-gray-800 m-1 w-full hover:bg-violet-800 hover:animate-pulse">Async and Await</button>
+                    </a> <br>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+            <!-- 20 -->
+            <div class="container1 right-container">
+                <img src="./photos/js.png" alt="">
+                <div class="text-box">
+                    <a href="./contents/introduction.html">
+                        <button type="button"
+                            class="my-3 px-8 py-5 font-semibold rounded-full bg-gray-100 text-gray-800 m-1 w-full hover:bg-violet-800 hover:animate-pulse">Document Object Modal</button>
+                    </a> <br>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/5a445330f4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function copyToClipboardt1() {
+      var myDivText = document.getElementById("myDivt1").innerText;
+      navigator.clipboard.writeText(myDivText)
+        .then(() => {
+          console.log('Text copied to clipboard');
+          document.getElementById("copyBtnt1").innerText = "Copied"
+        })
+        .catch((error) => {
+          console.error('Could not copy text: ', error);
+        });
+    }
+  </script>
+
+</head>
+
+
+
+<body class="pb-3">
+  <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg> -->
+        <i class="fa-brands fa-js fa-3x fa-border-radius fa-inverse"></i>
+        <!-- <img width="50px" src="./photos/logof.png"alt=""> -->
+        <span class=" text-2xl text-white border-2 border-gray-100 pl-1 py-1 pr-2">Minds</span>
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center ">
+        <a href="../index.html" class="mr-5 hover:text-gray-400 text-[#e2e8f0] ">Home</a>
+        <a href="../content.html" class="mr-5 hover:text-gray-400 text-[#e2e8f0]">Docs</a>
+        <a href="../devlopersCorner.html"
+          class=" dev_corner mr-5 hover:text-gray-400 text-[#e2e8f0] border-r-2">Devlopers corner&nbsp;&nbsp;</a>
+        <!-- <a class="mr-5 hover:text-gray-900 text-[#e2e8f0]">Fourth Link</a> -->
+      </nav>
+
+      <a href="https://github.com/Jainprashuk" target="_blank">
+        <button
+          class="nav_but inline-flex items-center bg-gray-100 border-0  focus:outline-none py-1 px-1 hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mx-1"><i
+            class="fa-brands fa-github fa-2x"></i> </button>
+      </a>
+
+      <a href="https://www.linkedin.com/in/prashuk-jain-937a12212" target="_blank">
+        <button
+          class="nav_but inline-flex items-center bg-gray-100 border-0  focus:outline-none py-1 px-1 hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mx-1"><i
+            class="fa-brands fa-linkedin-in fa-2x"></i> </button>
+      </a>
+
+      <a href="https://jainprashuk.github.io/personal_portfolio_29/index.html" target="_blank">
+        <button
+          class="nav_but inline-flex items-center bg-gray-100 border-0  focus:outline-none py-1 px-1 hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mx-1">
+          <i class="fa-solid fa-earth-americas fa-2x"></i> </a></button>
+      </a>
+
+
+
+
+    </div>
+
+  </header>
+
+  <div class="px-8 py-2 bg-gray-300 text-gray-100 w-11/12 mx-auto rounded-full mt-5 mb-5">
+    <div class="flex items-center mx-auto container justify-center md:justify-between py-2 ">
+      <div>
+        <i class="text-gray-900 fa-solid fa-triangle-exclamation"></i>
+        <span class="font-bold text-gray-900 px-4"> It is Recommended to practice while you learn </span>
+      </div>
+      <a href="../PracticeCompiler.html" rel="noopener noreferrer" class="items-center gap-2 hidden md:flex">
+        <i class=" text-gray-900 fa-solid fa-2x fa-keyboard"></i>
+        <span class=" text-gray-900 focus-visible:underline">practice Now</span>
+      </a>
+    </div>
+  </div>
+
+
+  <div class="container p-2 mx-auto sm:p-4 text-gray-100">
+    <!-- <h2 class="mb-4 text-2xl font-semibold leading-tight">Emails</h2> -->
+    <div class="flex flex-col overflow-x-auto text-xs text-gray-900">
+      <div class="flex  bg-gray-700 text-gray-100">
+        <div class="w-32 px-2 py-3 sm:p-3 ">Meathods</div>
+        <div class="flex-1 px-2 py-3 sm:p-3 text-center">Description</div>
+      </div>
+      <div class="flex border-b border-opacity-20 border-gray-700 bg-gray-100">
+
+        <div class="w-32 px-2 py-3 sm:p-3">
+          <p>Number()</p>
+        </div>
+        <div class="flex-1 block px-2 py-3 truncate sm:p-3 sm:w-auto text-center">Returns a number, converted from its
+          argument.</div>
+
+      </div>
+      <div class="flex border-b border-opacity-20 border-gray-700 bg-gray-100">
+
+        <div class="w-32 px-2 py-3 sm:p-3">
+          <p>ParseFloat()</p>
+        </div>
+        <div class="flex-1 block px-2 py-3 truncate sm:p-3 sm:w-auto text-center">Parses a string and returns a floating
+          point number.</div>
+
+      </div>
+      <div class="flex border-b border-opacity-20 border-gray-700 bg-gray-100">
+
+        <div class="w-32 px-2 py-3 sm:p-3">
+          <p>ParseInt()</p>
+        </div>
+        <div class="flex-1 block px-2 py-3 truncate sm:p-3 sm:w-auto text-center">Parses a string and returns an
+          integer.</div>
+
+      </div>
+      <div class="flex border-b border-opacity-20 border-gray-700 bg-gray-100">
+
+        <div class="w-32 px-2 py-3 sm:p-3">
+          <p>String()</p>
+        </div>
+        <div class="flex-1 block px-2 py-3 truncate sm:p-3 sm:w-auto text-center">Parses a number and returns an string.
+        </div>
+
+      </div>
+      <div class="flex border-b border-opacity-20 border-gray-700 bg-gray-100">
+
+        <div class="w-32 px-2 py-3 sm:p-3">
+          <p>toString()</p>
+        </div>
+        <div class="flex-1 block px-2 py-3 truncate sm:p-3 sm:w-auto text-center">Parses a number and returns an string.
+        </div>
+
+      </div>
+      <div class="flex border-b border-opacity-20 border-gray-700 bg-gray-100">
+
+        <div class="w-32 px-2 py-3 sm:p-3">
+          <p>toExponential()</p>
+        </div>
+        <div class="flex-1 block px-2 py-3 truncate sm:p-3 sm:w-auto text-center">Returns a string, with a number
+          rounded and written using exponential notation.</div>
+
+      </div>
+      <div class="flex border-b border-opacity-20 border-gray-700 bg-gray-100">
+
+        <div class="w-32 px-2 py-3 sm:p-3">
+          <p>toFixed()</p>
+        </div>
+        <div class="flex-1 block px-2 py-3 truncate sm:p-3 sm:w-auto text-center">Returns a string, with a number
+          rounded and written with a specified number of decimals.</div>
+
+      </div>
+      <div class="flex border-b border-opacity-20 border-gray-700 bg-gray-100">
+
+        <div class="w-32 px-2 py-3 sm:p-3">
+          <p>toPrecision()</p>
+        </div>
+        <div class="flex-1 block px-2 py-3 truncate sm:p-3 sm:w-auto text-center">Returns a string, with a number
+          written with a specified length.</div>
+      </div>
+    </div>
+  </div>
+
+
+  <div
+    class="flex flex-col max-w-lg p-6  overflow-hidden rounded-lg shadow-md bg-gray-700 text-gray-100 mx-auto">
+    <div id="myDivt1">
+      <p>// String To Number</p>
+
+    <p>
+      <span class="text-red-400">Number</span>("3.14") <br>
+      <span class="text-red-400">Number</span>(Math.PI) <br>
+      <span class="text-red-400">Number</span>(" ") <br>
+      <span class="text-red-400">Number</span>("") <br>
+      <br>
+      <span class="text-red-400">let</span> y = "5"; // y is a string <br>
+      <span class="text-red-400">let</span> x = <span class="text-red-400">+</span> y; // x is a number
+      <br>
+      <br>
+    <p>// Number To String</p>
+    <p>
+      <span class="text-red-400">String</span>(x) <br>
+      <span class="text-red-400">String</span>(123) <br>
+      <span class="text-red-400">String</span>(100 + 23) <br><br>
+
+      x.<span class="text-red-400">toString</span>() <br>
+      (123).<span class="text-red-400">toString</span>() <br>
+      (100 + 23).<span class="text-red-400">toString</span>() <br>
+
+    </p>
+
+    </p>
+    </div>
+    
+    <button onclick="copyToClipboardt1()" type="button" id="copyBtnt1" class=" mt-6 px-8 py-3 font-semibold rounded bg-gray-300 text-gray-800  ">Copy</button>
+         
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://kit.fontawesome.com/5a445330f4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://kit.fontawesome.com/5a445330f4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

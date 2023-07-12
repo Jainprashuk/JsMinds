@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function copyToClipboardd1() {
+      var myDivText = document.getElementById("myDivd1").innerText;
+      navigator.clipboard.writeText(myDivText)
+        .then(() => {
+          console.log('Text copied to clipboard');
+          document.getElementById("copyBtnd1").innerText = "Copied"
+        })
+        .catch((error) => {
+          console.error('Could not copy text: ', error);
+        });
+    }
+  </script>
+
+</head>
+
+
+
+<body class="pb-3">
+  <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg> -->
+        <i class="fa-brands fa-js fa-3x fa-border-radius fa-inverse"></i>
+        <!-- <img width="50px" src="./photos/logof.png"alt=""> -->
+        <span class=" text-2xl text-white border-2 border-gray-100 pl-1 py-1 pr-2">Minds</span>
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center ">
+        <a href="../index.html" class="mr-5 hover:text-gray-400 text-[#e2e8f0] ">Home</a>
+        <a href="../content.html" class="mr-5 hover:text-gray-400 text-[#e2e8f0]">Docs</a>
+        <a href="../devlopersCorner.html"
+          class=" dev_corner mr-5 hover:text-gray-400 text-[#e2e8f0] border-r-2">Devlopers corner&nbsp;&nbsp;</a>
+        <!-- <a class="mr-5 hover:text-gray-900 text-[#e2e8f0]">Fourth Link</a> -->
+      </nav>
+
+      <a href="https://github.com/Jainprashuk" target="_blank">
+        <button
+          class="nav_but inline-flex items-center bg-gray-100 border-0  focus:outline-none py-1 px-1 hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mx-1"><i
+            class="fa-brands fa-github fa-2x"></i> </button>
+      </a>
+
+      <a href="https://www.linkedin.com/in/prashuk-jain-937a12212" target="_blank">
+        <button
+          class="nav_but inline-flex items-center bg-gray-100 border-0  focus:outline-none py-1 px-1 hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mx-1"><i
+            class="fa-brands fa-linkedin-in fa-2x"></i> </button>
+      </a>
+
+      <a href="https://jainprashuk.github.io/personal_portfolio_29/index.html" target="_blank">
+        <button
+          class="nav_but inline-flex items-center bg-gray-100 border-0  focus:outline-none py-1 px-1 hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mx-1">
+          <i class="fa-solid fa-earth-americas fa-2x"></i> </a></button>
+      </a>
+
+
+
+
+    </div>
+
+  </header>
+
+  <div class="px-8 py-2 bg-gray-300 text-gray-100 w-11/12 mx-auto rounded-full mt-5 mb-5">
+    <div class="flex items-center mx-auto container justify-center md:justify-between py-2 ">
+      <div>
+        <i class="text-gray-900 fa-solid fa-triangle-exclamation"></i>
+        <span class="font-bold text-gray-900 px-4"> It is Recommended to practice while you learn </span>
+      </div>
+      <a href="../PracticeCompiler.html" rel="noopener noreferrer" class="items-center gap-2 hidden md:flex">
+        <i class=" text-gray-900 fa-solid fa-2x fa-keyboard"></i>
+        <span class=" text-gray-900 focus-visible:underline">practice Now</span>
+      </a>
+    </div>
+  </div>
+
+
+  <section class="bg-white text-gray-100 w-11/12 mx-auto h-full pb-4 rounded-md">
+    <div class="container flex flex-col justify-center p-4 mx-auto md:p-8">
+      <h2 class="mb-12 text-4xl font-bold leading-none text-center sm:text-7xl text-gray-900">Date And Time</h2>
+      <!-- <p class="text-black text-center">A callback is a function passed as an argument to another function .
+                This technique allows a function to call another function.
+                A callback function can run after another function has finished .
+            </p> -->
+
+
+      <div>
+        <div
+          class="flex flex-col max-w-lg p-6  overflow-hidden rounded-lg shadow-md bg-gray-900 text-gray-100 mx-auto">
+          <br>
+          <div id="myDivd1">
+            <p class="text-gray-400">
+
+              <span class="text-orange-600">Date</span> <br>
+              <span class="text-green-600">There are 9 ways to create a new date object: </span> <br>
+              <br>
+              new Date() <br>
+              new Date(date string) <br>
+              new Date(year,month) <br>
+              new Date(year,month,day) <br>
+              new Date(year,month,day,hours) <br>
+              new Date(year,month,day,hours,minutes) <br>
+              new Date(year,month,day,hours,minutes,seconds) <br>
+              new Date(year,month,day,hours,minutes,seconds,ms) <br>
+              new Date(milliseconds) <br><br>
+  
+              <span class="text-yellow-600">Example:</span>
+            <p>
+              let now = new Date() <br> <br>
+              console.log(now.getTime()) <br>
+              console.log(now.getFullYear()) <br>
+              console.log(now.getMonth()) //starts from 0 <br>
+              console.log(now.getDate()) <br>
+              console.log(now.getDay()) <br>
+              console.log(now.getHours()) <br>
+              console.log(now) <br>
+              console.log(now.toString()) <br>
+              <br>
+              <span class="text-blue-300">Expected Output :- </span><br>
+            <p>
+              1678219087040 <br>
+              2023 <br>
+              2 <br>
+              7 <br>
+              2 <br>
+              19 <br>
+              2023-03-07T19:58:07.040Z <br>
+              Tue Mar 07 2023 19:58:07 GMT+0000 (Coordinated Universal Time) <br>
+            </p>
+            </p>
+  
+  
+            </p>
+          </div>
+
+          <button onclick="copyToClipboardd1()" type="button" id="copyBtnd1" class=" mt-6 px-8 py-3 font-semibold rounded bg-gray-300 text-gray-800  ">Copy</button>
+         
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://kit.fontawesome.com/5a445330f4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://kit.fontawesome.com/5a445330f4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

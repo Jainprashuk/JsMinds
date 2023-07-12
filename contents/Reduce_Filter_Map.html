@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function copyToClipboardp1() {
+      var myDivText = document.getElementById("myDivp1").innerText;
+      navigator.clipboard.writeText(myDivText)
+        .then(() => {
+          console.log('Text copied to clipboard');
+          document.getElementById("copyBtnp1").innerText = "Copied"
+        })
+        .catch((error) => {
+          console.error('Could not copy text: ', error);
+        });
+    }
+    function copyToClipboardp2() {
+      var myDivText = document.getElementById("myDivp2").innerText;
+      navigator.clipboard.writeText(myDivText)
+        .then(() => {
+          console.log('Text copied to clipboard');
+          document.getElementById("copyBtnp2").innerText = "Copied"
+        })
+        .catch((error) => {
+          console.error('Could not copy text: ', error);
+        });
+    }
+    function copyToClipboardp3() {
+      var myDivText = document.getElementById("myDivp3").innerText;
+      navigator.clipboard.writeText(myDivText)
+        .then(() => {
+          console.log('Text copied to clipboard');
+          document.getElementById("copyBtnp3").innerText = "Copied"
+        })
+        .catch((error) => {
+          console.error('Could not copy text: ', error);
+        });
+    }
+  </script>
+
+</head>
+
+<body class="pb-3">
+  <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg> -->
+        <i class="fa-brands fa-js fa-3x fa-border-radius fa-inverse"></i>
+        <!-- <img width="50px" src="./photos/logof.png"alt=""> -->
+        <span class=" text-2xl text-white border-2 border-gray-100 pl-1 py-1 pr-2">Minds</span>
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center ">
+        <a href="../index.html" class="mr-5 hover:text-gray-400 text-[#e2e8f0] ">Home</a>
+        <a href="../content.html" class="mr-5 hover:text-gray-400 text-[#e2e8f0]">Docs</a>
+        <a href="../devlopersCorner.html"
+          class=" dev_corner mr-5 hover:text-gray-400 text-[#e2e8f0] border-r-2">Devlopers corner&nbsp;&nbsp;</a>
+        <!-- <a class="mr-5 hover:text-gray-900 text-[#e2e8f0]">Fourth Link</a> -->
+      </nav>
+
+      <a href="https://github.com/Jainprashuk" target="_blank">
+        <button
+          class="nav_but inline-flex items-center bg-gray-100 border-0  focus:outline-none py-1 px-1 hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mx-1"><i
+            class="fa-brands fa-github fa-2x"></i> </button>
+      </a>
+
+      <a href="https://www.linkedin.com/in/prashuk-jain-937a12212" target="_blank">
+        <button
+          class="nav_but inline-flex items-center bg-gray-100 border-0  focus:outline-none py-1 px-1 hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mx-1"><i
+            class="fa-brands fa-linkedin-in fa-2x"></i> </button>
+      </a>
+
+      <a href="https://jainprashuk.github.io/personal_portfolio_29/index.html" target="_blank">
+        <button
+          class="nav_but inline-flex items-center bg-gray-100 border-0  focus:outline-none py-1 px-1 hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mx-1">
+          <i class="fa-solid fa-earth-americas fa-2x"></i> </a></button>
+      </a>
+
+
+
+
+    </div>
+
+  </header>
+
+  <div class="px-8 py-2 bg-gray-300 text-gray-100 w-11/12 mx-auto rounded-full mt-5 mb-5">
+    <div class="flex items-center mx-auto container justify-center md:justify-between py-2 ">
+      <div>
+        <i class="text-gray-900 fa-solid fa-triangle-exclamation"></i>
+        <span class="font-bold text-gray-900 px-4"> It is Recommended to practice while you learn </span>
+      </div>
+      <a href="../PracticeCompiler.html" rel="noopener noreferrer" class="items-center gap-2 hidden md:flex">
+        <i class=" text-gray-900 fa-solid fa-2x fa-keyboard"></i>
+        <span class=" text-gray-900 focus-visible:underline">practice Now</span>
+      </a>
+    </div>
+  </div>
+
+
+  <section class="bg-white text-gray-100 w-11/12 mx-auto h-full pb-4 rounded-md">
+
+
+    <div class="mt-5">
+      <h1 class="mb-6 mt-10 pt-10 text-3xl font-bold leading-none text-center sm:text-4xl text-gray-900"> <i
+          class="fa-solid fa-circle fa-0.5x"></i> Map() Meathod </h1>
+      <p class="text-gray-600 text-center text-xl"> 1) It applies a given function on all the elements of the
+        array and returns the updated array. It is the simpler and shorter code instead of a loop.</p>
+      <p class="text-gray-600 text-center text-xl">2) array functions that transform the array according to the
+        applied function and return the updated array.</p>
+      <div
+        class="flex flex-col max-w-lg p-6 mt-4 overflow-hidden rounded-lg shadow-md bg-gray-900 text-gray-100 mx-auto">
+        <div id="myDivp1">
+          <p class="text-green-600">Syntax :- </p>
+          <p># array<span class="text-red-600">.map</span> (function_to_be_applied)</p>
+          <p># array<span class="text-red-600">.map</span> (function (args)) {</p>
+          <p class="ml-5"> //code</p>
+          <p class="ml-5"> })</p>
+          <br><br>
+          <p class="text-green-600"> Example :- </p>
+          <p>
+            <span class="text-red-600">function</span> triple(n){ <br>
+            <span class="text-red-600">return</span> n*3; <br>
+            } <br>
+            arr = <span class="text-red-600">new</span> Array(1, 2, 3, 6, 5, 4);<br>
+
+            var new_arr = arr<span class="text-red-600">.map</span>(triple) <br>
+            console.log(new_arr);<br>
+          </p><br>
+          <p class="text-orange-600"> output :- </p>
+
+          <p>Output:
+            [ 3, 6, 9, 18, 15, 12 ]</p>
+        </div>
+        
+        <button onclick="copyToClipboardp1()" type="button" id="copyBtnp1" class=" mt-6 px-8 py-3 font-semibold rounded bg-gray-300 text-gray-800  ">Copy</button>
+         
+      </div>
+    </div>
+
+    <div class="mt-5">
+      <h1 class="mb-6 mt-10 pt-10 text-3xl font-bold leading-none text-center sm:text-4xl text-gray-900"> <i
+          class="fa-solid fa-circle fa-0.5x"></i> Reduce() Meathod </h1>
+      <p class="text-gray-600 text-center text-xl"> 1) It reduces all the elements of the array to a single value by
+        repeatedly applying a function. It is an alternative of using a loop and updating the result for every scanned
+        element.</p>
+      <p class="text-gray-600 text-center text-xl">2) array functions that transform the array according to the
+        applied function and return the updated array.</p>
+      <div
+        class="flex flex-col max-w-lg p-6 mt-4 overflow-hidden rounded-lg shadow-md bg-gray-900 text-gray-100 mx-auto">
+        <div id="myDivp2">
+          <p class="text-green-600">Syntax :- </p>
+          <p># array<span class="text-red-600">.reduce</span> (function_to_be_applied)</p>
+          <p># array<span class="text-red-600">.reduce</span> (function (args)) {</p>
+          <p class="ml-5"> //code</p>
+          <p class="ml-5"> })</p>
+          <br><br>
+          <p class="text-green-600"> Example :- </p>
+          <p>
+            <span class="text-red-600">function</span> product(a, b){ <br>
+            <span class="text-red-600">return</span> a * b; <br>
+            } <br>
+            arr = <span class="text-red-600">new</span> Array(1, 2, 3, 6, 5, 4);<br>
+
+            var new_arr = arr<span class="text-red-600">.reduce</span>(product) <br>
+            console.log(product_of_arr);<br>
+          </p>
+          <br>
+          <p class="text-orange-600"> output :- </p>
+
+          <p>Output:
+            720</p>
+        </div>
+        
+        <button onclick="copyToClipboardp2()" type="button" id="copyBtnp2" class=" mt-6 px-8 py-3 font-semibold rounded bg-gray-300 text-gray-800  ">Copy</button>
+         
+      </div>
+    </div>
+
+    <div class="mt-5">
+      <h1 class="mb-6 mt-10 pt-10 text-3xl font-bold leading-none text-center sm:text-4xl text-gray-900"> <i
+          class="fa-solid fa-circle fa-0.5x"></i> Filter() Meathod </h1>
+      <p class="text-gray-600 text-center text-xl"> 1) It filters the elements of the array that return false for the
+        applied condition and returns the array which contains elements that satisfy the applied condition. </p>
+      <p class="text-gray-600 text-center text-xl">2) array functions that transform the array according to the
+        applied function and return the updated array.</p>
+      <div
+        class="flex flex-col max-w-lg p-6 mt-4 overflow-hidden rounded-lg shadow-md bg-gray-900 text-gray-100 mx-auto">
+        <div id="myDivp3">
+          <p class="text-green-600">Syntax :- </p>
+          <p># array<span class="text-red-600">.filter</span> (function_to_be_applied)</p>
+          <p># array<span class="text-red-600">.filter</span> (function (args)) {</p>
+          <p class="ml-5"> //code</p>
+          <p class="ml-5"> })</p>
+          <br><br>
+          <p class="text-green-600"> Example :- </p>
+          <p>
+
+            arr = <span class="text-red-600">new</span> Array(1, 2, 3, 6, 5, 4);<br>
+
+            var new_arr = arr<span class="text-red-600">.filter</span>(function(x){<br>
+            return x % 2 == 0 <br>
+            }); <br>
+            console.log(product_of_arr);<br>
+            console.log(new_arr) <br>
+          </p>
+          <br>
+          <p class="text-orange-600"> output :- </p>
+
+          <p>Output:
+            [ 2, 6, 4 ]</p>
+        </div>
+        <button onclick="copyToClipboardp3()" type="button" id="copyBtnp3" class=" mt-6 px-8 py-3 font-semibold rounded bg-gray-300 text-gray-800  ">Copy</button>
+         
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://kit.fontawesome.com/5a445330f4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

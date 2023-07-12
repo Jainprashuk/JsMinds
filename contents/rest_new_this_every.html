@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function copyToClipboardrn() {
+      var myDivText = document.getElementById("myDivrn").innerText;
+      navigator.clipboard.writeText(myDivText)
+        .then(() => {
+          console.log('Text copied to clipboard');
+          document.getElementById("copyBtnrn").innerText = "Copied"
+        })
+        .catch((error) => {
+          console.error('Could not copy text: ', error);
+        });
+    }
+
+    function copyToClipboardrn1() {
+      var myDivText = document.getElementById("myDivrn1").innerText;
+      navigator.clipboard.writeText(myDivText)
+        .then(() => {
+          console.log('Text copied to clipboard');
+          document.getElementById("copyBtnrn1").innerText = "Copied"
+        })
+        .catch((error) => {
+          console.error('Could not copy text: ', error);
+        });
+    }
+
+    function copyToClipboardrn2() {
+      var myDivText = document.getElementById("myDivrn2").innerText;
+      navigator.clipboard.writeText(myDivText)
+        .then(() => {
+          console.log('Text copied to clipboard');
+          document.getElementById("copyBtnrn2").innerText = "Copied"
+        })
+        .catch((error) => {
+          console.error('Could not copy text: ', error);
+        });
+    }
+
+    function copyToClipboardrn3() {
+      var myDivText = document.getElementById("myDivrn3").innerText;
+      navigator.clipboard.writeText(myDivText)
+        .then(() => {
+          console.log('Text copied to clipboard');
+          document.getElementById("copyBtnrn3").innerText = "Copied"
+        })
+        .catch((error) => {
+          console.error('Could not copy text: ', error);
+        });
+    }
+  </script>
+
+</head>
+
+
+
+<body class="pb-3">
+  <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg> -->
+        <i class="fa-brands fa-js fa-3x fa-border-radius fa-inverse"></i>
+        <!-- <img width="50px" src="./photos/logof.png"alt=""> -->
+        <span class=" text-2xl text-white border-2 border-gray-100 pl-1 py-1 pr-2">Minds</span>
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center ">
+        <a href="../index.html" class="mr-5 hover:text-gray-400 text-[#e2e8f0] ">Home</a>
+        <a href="../content.html" class="mr-5 hover:text-gray-400 text-[#e2e8f0]">Docs</a>
+        <a href="../devlopersCorner.html"
+          class=" dev_corner mr-5 hover:text-gray-400 text-[#e2e8f0] border-r-2">Devlopers corner&nbsp;&nbsp;</a>
+        <!-- <a class="mr-5 hover:text-gray-900 text-[#e2e8f0]">Fourth Link</a> -->
+      </nav>
+
+      <a href="https://github.com/Jainprashuk" target="_blank">
+        <button
+          class="nav_but inline-flex items-center bg-gray-100 border-0  focus:outline-none py-1 px-1 hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mx-1"><i
+            class="fa-brands fa-github fa-2x"></i> </button>
+      </a>
+
+      <a href="https://www.linkedin.com/in/prashuk-jain-937a12212" target="_blank">
+        <button
+          class="nav_but inline-flex items-center bg-gray-100 border-0  focus:outline-none py-1 px-1 hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mx-1"><i
+            class="fa-brands fa-linkedin-in fa-2x"></i> </button>
+      </a>
+
+      <a href="https://jainprashuk.github.io/personal_portfolio_29/index.html" target="_blank">
+        <button
+          class="nav_but inline-flex items-center bg-gray-100 border-0  focus:outline-none py-1 px-1 hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mx-1">
+          <i class="fa-solid fa-earth-americas fa-2x"></i> </a></button>
+      </a>
+
+
+
+
+    </div>
+
+  </header>
+
+  <div class="px-8 py-2 bg-gray-300 text-gray-100 w-11/12 mx-auto rounded-full mt-5 mb-5">
+    <div class="flex items-center mx-auto container justify-center md:justify-between py-2 ">
+      <div>
+        <i class="text-gray-900 fa-solid fa-triangle-exclamation"></i>
+        <span class="font-bold text-gray-900 px-4"> It is Recommended to practice while you learn </span>
+      </div>
+      <a href="../PracticeCompiler.html" rel="noopener noreferrer" class="items-center gap-2 hidden md:flex">
+        <i class=" text-gray-900 fa-solid fa-2x fa-keyboard"></i>
+        <span class=" text-gray-900 focus-visible:underline">practice Now</span>
+      </a>
+    </div>
+  </div>
+
+  <section>
+    <div class="w-10/12 mx-auto p-5 bg-gray-100 ">
+      <h1 class="text-center text-5xl font-bold h-full mb-5">Rest Parameter</h1>
+      <p class="text-center text-lg">The rest parameter syntax allows a function to accept an indefinite number of
+        arguments as an array, providing a way to represent variadic functions in JavaScript.
+        A function definition's last parameter can be prefixed with ... (three U+002E FULL STOP characters),
+        which will cause all remaining (user supplied) parameters to be placed within an Array object.
+      </p>
+      <div class="bg-gray-900 w-1/2 text-gray-200 mx-auto p-5">
+        <div id="myDivrn">
+          <p class="text-gray-100 p-8">
+            <span class="text-green-600">syntax : </span> <br>
+            <span class="text-red-600">function</span> f1(a, b, <span class="text-red-600">...</span>theArgs) {
+            <br>
+            // … <br>
+            } <br>
+          </p>
+          <p class="text-gray-100 p-8">
+            <span class="text-green-600">Example : </span> <br>
+            function myFun(a, b, <span class="text-red-600">...manyMoreArgs</span> ) { <br>
+            console.log("a", a); <br>
+            console.log("b", b); <br>
+            console.log("manyMoreArgs", manyMoreArgs); <br>
+            } <br>
+            <br>
+            myFun("one", "two", "three", "four", "five", "six"); <br>
+            <br>
+  
+            // <span class="text-yellow-500">Console Output:</span> <br>
+            // a, one <br>
+            // b, two <br>
+            // manyMoreArgs, ["three", "four", "five", "six"] <br>
+  
+          </p>
+        </div>
+        
+        <button onclick="copyToClipboardrn()" type="button" id="copyBtnrn" class=" mt-6 px-8 py-3 font-semibold rounded bg-gray-300 text-gray-800 w-full  ">Copy</button>
+         
+      </div>
+    </div>
+    <div class="w-10/12 mx-auto p-5 bg-gray-100 ">
+      <h1 class="text-center text-5xl font-bold h-full mb-5">New Operator</h1>
+      <p class="text-center text-lg">The new operator lets developers create an instance of a user-defined object
+        type or of one of the built-in object types that has a constructor function.
+      </p>
+      <div class="bg-gray-900 w-1/2 text-gray-200 mx-auto p-5">
+        <div id="myDivrn1">
+          <p class="text-gray-100 p-8">
+            <span class="text-green-600">syntax : </span> <br>
+            <span class="text-red-600">new </span> constructorFunction(arguments) <br>
+  
+          </p>
+          <p class="text-gray-100 p-8">
+            <span class="text-green-600">Example 1 : </span> <br>
+            let person = <span class="text-red-600">new </span> Object(); <br>
+            person.name = "prashuk"; <br>
+            console.log(person); <br> <br>
+  
+            <span class="text-green-600">Example 2 : </span> <br>
+            var person = function (firstName , CourceCount) { <br>
+            this.firstName = firstName; <br>
+            this.CourceCount = CourceCount; <br>
+            }; <br>
+            <br>
+            var Anurag = <span class="text-red-600">new </span> person("anurag" , 7) <br>
+            var prashuk = <span class="text-red-600">new </span> person("prashuk" , 2) <br>
+            <br>
+            console.log(person); <br>
+          </p>
+        </div>
+        
+        <button onclick="copyToClipboardrn1()" type="button" id="copyBtnrn1" class=" mt-6 px-8 py-3 font-semibold rounded bg-gray-300 text-gray-800 w-full ">Copy</button>
+         
+      </div>
+    </div>
+
+
+    <div class="w-10/12 mx-auto p-5 bg-gray-100 ">
+      <h1 class="text-center text-5xl font-bold h-full mb-5">This Operator</h1>
+      <p class="text-center text-lg">"This" keyword refers to an object that is executing the current piece of
+        code. It references the object that is executing the current function. If the function being referenced
+        is a regular function, “this” references the global object. If the function that is being referenced is
+        a method in an object, “this” references the object itself.
+      </p>
+      <div class="bg-gray-900 w-1/2 text-gray-200 mx-auto p-5">
+        <div id="myDivrn2">
+          <p class="text-gray-100 p-8">
+            <span class="text-green-600">syntax : </span> <br>
+            <span class="text-red-600">this </span> <br>
+  
+          </p>
+          <p class="text-gray-100 p-8">
+            <span class="text-green-600">Example 1 : </span> <br>
+            const test = { <br>
+            prop: 42, <br>
+            func: function() { <br>
+            return <span class="text-red-600">this </span>.prop; <br>
+            }, <br>
+            }; <br>
+            <br>
+            console.log(test.func()); <br>
+            // Expected output: 42 <br>
+          </p>
+        </div>
+        
+        <button onclick="copyToClipboardrn2()" type="button" id="copyBtnrn2" class=" mt-6 px-8 py-3 font-semibold rounded bg-gray-300 w-full text-gray-800  ">Copy</button>
+         
+      </div>
+    </div>
+
+
+    <div class="w-10/12 mx-auto p-5 bg-gray-100 ">
+      <h1 class="text-center text-5xl font-bold h-full mb-5">every Meathod</h1>
+      <p class="text-center text-lg">The every() method executes a function for each array element.
+
+        The every() method returns true if the function returns true for all elements.
+
+        The every() method returns false if the function returns false for one element.
+
+        The every() method does not execute the function for empty elements.
+
+        The every() method does not change the original array
+      </p>
+      <div class="bg-gray-900 w-1/2 text-gray-200 mx-auto p-5">
+        <div id="myDivrn3">
+          <p class="text-gray-100 p-8">
+            <span class="text-green-600">syntax : </span> <br>
+            array.<span class="text-red-600">every </span>(function(currentValue, index, arr), thisValue) <br>
+  
+  
+          </p>
+          <p class="text-gray-100 p-8">
+            <span class="text-green-600">Example : </span> <br>
+            const ages = [32, 33, 16, 40]; <br>
+  
+            ages.<span class="text-red-600">every </span>(checkAge) <br>
+  
+            function checkAge(age) { <br>
+            return age > 18; <br>
+            } <br>
+          </p>
+        </div>
+        
+        <button onclick="copyToClipboardrn3()" type="button" id="copyBtnrn3" class=" mt-6 px-8 py-3 font-semibold rounded bg-gray-300 text-gray-800 w-full ">Copy</button>
+         
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://kit.fontawesome.com/5a445330f4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg> -->
+                <i class="fa-brands fa-js fa-3x fa-border-radius fa-inverse"></i>
+                <!-- <img width="50px" src="./photos/logof.png"alt=""> -->
+                <span class=" text-2xl text-white border-2 border-gray-100 pl-1 py-1 pr-2">Minds</span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center ">
+                <a href="../index.html" class="mr-5 hover:text-gray-400 text-[#e2e8f0] ">Home</a>
+                <a href="../content.html" class="mr-5 hover:text-gray-400 text-[#e2e8f0]">Docs</a>
+                <a href="../devlopersCorner.html"
+                    class=" dev_corner mr-5 hover:text-gray-400 text-[#e2e8f0] border-r-2">Devlopers
+                    corner&nbsp;&nbsp;</a>
+                <!-- <a class="mr-5 hover:text-gray-900 text-[#e2e8f0]">Fourth Link</a> -->
+            </nav>
+
+            <a href="https://github.com/Jainprashuk" target="_blank">
+                <button
+                    class="nav_but inline-flex items-center bg-gray-100 border-0  focus:outline-none py-1 px-1 hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mx-1"><i
+                        class="fa-brands fa-github fa-2x"></i> </button>
+            </a>
+
+            <a href="https://www.linkedin.com/in/prashuk-jain-937a12212" target="_blank">
+                <button
+                    class="nav_but inline-flex items-center bg-gray-100 border-0  focus:outline-none py-1 px-1 hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mx-1"><i
+                        class="fa-brands fa-linkedin-in fa-2x"></i> </button>
+            </a>
+
+            <a href="https://jainprashuk.github.io/personal_portfolio_29/index.html" target="_blank">
+                <button
+                    class="nav_but inline-flex items-center bg-gray-100 border-0  focus:outline-none py-1 px-1 hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mx-1">
+                    <i class="fa-solid fa-earth-americas fa-2x"></i> </a></button>
+            </a>
+
+
+
+
+        </div>
+
+    </header>
+
+    <div class="px-8 py-2 bg-gray-300 text-gray-100 w-11/12 mx-auto rounded-full mt-5 mb-5">
+        <div class="flex items-center mx-auto container justify-center md:justify-between py-2 ">
+            <div>
+                <i class="text-gray-900 fa-solid fa-triangle-exclamation"></i>
+                <span class="font-bold text-gray-900 px-4"> It is Recommended to practice while you learn </span>
+            </div>
+            <a href="../PracticeCompiler.html" rel="noopener noreferrer" class="items-center gap-2 hidden md:flex">
+                <i class=" text-gray-900 fa-solid fa-2x fa-keyboard"></i>
+                <span class=" text-gray-900 focus-visible:underline">practice Now</span>
+            </a>
+        </div>
+    </div>
+
+
+
+    <section class="py-6 bg-gray-100 text-gray-900 w-11/12 mx-auto rounded px-4 mb-4">
+        <div class="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
+            <h1 class="text-4xl font-bold leading-none text-center sm:text-5xl">Closure</h1>
+            <p class="max-w-2xl text-center text-gray-700">A closure is a feature of JavaScript that allows inner
+                functions to access their outer scope. Closure helps in binding a function to its outer boundary and is
+                created automatically whenever a function is created.</p>
+        </div>
+        <h1 class="p-5 text-gray-900 font-bold text-md">Let’s See And Understand Closure Through Some Example. </h1>
+
+
+
+        <section class="text-gray-600 body-font bg-gray-300 rounded-lg">
+            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                <div
+                    class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Example 1 : </h1>
+                    <p class="mb-8 leading-relaxed"><span class="text-green-500 font-bold"> Explanation </span>: We can
+                        access the variable b which is defined in
+                        function foo() through function inner() as the later preserves the scope chain of the enclosing
+                        function at the time of execution of the enclosing function i.e. the inner function knows the
+                        value of b through it’s scope chain.
+                        This is closure in action that is inner function can have access to the outer function variables
+                        as well as all the global variables.</p>
+                </div>
+                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 bg-gray-900 text-gray-100 p-5">
+                    <!-- <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600"> -->
+                    <div id="myDivclo">
+                        <span class="text-red-500">function</span> foo() <br>
+                    { <br>
+                    <span class="text-red-500">var</span> b = 1; <br>
+                    <span class="text-red-500">function</span> inner(){ <br>
+                    <span class="text-red-500">return</span> b; <br>
+                    } <br>
+                    <span class="text-red-500">return</span> inner; <br>
+                    } <br>
+                    <span class="text-red-500">var</span> get_func_inner = foo(); <br>
+                    <br>
+                    console.log(get_func_inner()); <br>
+                    console.log(get_func_inner()); <br>
+                    console.log(get_func_inner()); <br>
+                    </div>
+                    
+        <button onclick="copyToClipboardclo()" type="button" id="copyBtnclo" class=" mt-6 px-8 py-3 font-semibold w-full rounded bg-gray-300 text-gray-800  ">Copy</button>
+         
+                </div>
+            </div>
+        </section>
+
+        <br>
+
+        <section class="text-gray-600 body-font bg-gray-300 rounded-lg">
+            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 bg-gray-900 text-gray-100 p-5">
+                    <div id="myDivclo1">
+                        <span class="text-red-500">function</span> foo(outer_arg) { <br>
+                            <br>
+                            <span class="text-red-500">function</span> inner(inner_arg) { <br>
+                            <span class="text-red-500">return</span> outer_arg + inner_arg; <br>
+                            } <br>
+                            <span class="text-red-500">return</span> inner; <br>
+                            } <br>
+                            <span class="text-red-500">var</span> get_func_inner = foo(5); <br>
+                            <br>
+                            console.log(get_func_inner(4)); <br>
+                            console.log(get_func_inner(3)); <br>
+                    </div>
+                    
+        <button onclick="copyToClipboardclo1()" type="button" id="copyBtnclo1" class=" mt-6 px-8 py-3 font-semibold w-full rounded bg-gray-300 text-gray-800  ">Copy</button>
+         
+                </div>
+                <div
+                    class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Example 2 :</h1>
+                    <p class="mb-8 leading-relaxed"><span class="text-green-500 font-bold"> Explanation </span>: In the
+                        above example we used a parameter function rather than a default one. Note even when we are done
+                        with the execution of foo(5) we can access the outer_arg variable from the inner function. And
+                        on the execution of the inner function produce the summation of outer_arg and inner_arg as
+                        desired. </p>
+                </div>
+            </div>
+        </section>
+        <br>
+        <section class="text-gray-600 body-font bg-gray-300 rounded-lg">
+            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                <div
+                    class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Example 3 : </h1>
+                    <p class="mb-8 leading-relaxed"><span class="text-green-500 font-bold"> Explanation </span>: Did you
+                        guess the right answer? In the above code we have created four closure which point to the
+                        variable i which is local variable to the function outer. Closure don’t remember the value of
+                        the variable it only points to the variable or stores the reference of the variable and hence,
+                        returns the current value. In the above code when we try to update the value of it gets
+                        reflected to all because the closure stores the reference. </p>
+                </div>
+                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 bg-gray-900 text-gray-100 p-5">
+                    <div id="myDivclo2">
+                        // Outer function <br>
+                    <span class="text-red-500">function</span> outer() <br>
+                    { <br>
+                    <span class="text-red-500">var</span> arr = []; <br>
+                    <span class="text-red-500">function</span> i; <br>
+                    for (i = 0; i < 4; i++) <br>
+                        { <br>
+                        // storing anonymous function <br>
+                        arr[i] = <span class="text-red-500">function</span> () { return i; } <br>
+                        } <br>
+                        <br>
+                        // returning the array. <br>
+                        <span class="text-red-500">return</span> arr; <br>
+                        } <br>
+                        <br>
+                        <span class="text-red-500">var</span> get_arr = outer(); <br>
+                        <br>
+                        console.log(get_arr[0]()); <br>
+                        console.log(get_arr[1]()); <br>
+                        console.log(get_arr[2]()); <br>
+                        console.log(get_arr[3]()); <br>
+                    </div>
+                    
+        <button onclick="copyToClipboardclo2()" type="button" id="copyBtnclo2" class="w-full mt-6 px-8 py-3 font-semibold rounded bg-gray-300 text-gray-800  ">Copy</button>
+         
+
+                </div>
+            </div>
+        </section>
+        <br>
+        <section class="text-gray-600 body-font bg-gray-300 rounded-lg">
+            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 bg-gray-900 text-gray-100 p-5">
+                    <div id="myDivclo3">
+                        // Outer function <br>
+                    <span class="text-red-500">function</span> outer() <br>
+                    { <br>
+                    <span class="text-red-500">function</span> create_Closure(val) <br>
+                    { <br>
+                    <span class="text-red-500">return</span> function() <br>
+                    { <br>
+                    <span class="text-red-500">return</span> val; <br>
+                    } <br>
+                    } <br>
+                    <span class="text-red-500">var</span> arr = []; <br>
+                    <span class="text-red-500">var</span> i; <br>
+                    for (i = 0; i < 4; i++) <br>
+                        { <br>
+                        arr[i] = create_Closure(i); <br>
+                        } <br>
+                        <span class="text-red-500">return</span> arr; <br>
+                        } <br>
+                        <span class="text-red-500">var</span> get_arr = outer(); <br>
+                        console.log(get_arr[0]()); <br>
+                        console.log(get_arr[1]()); <br>
+                        console.log(get_arr[2]()); <br>
+                        console.log(get_arr[3]()); <br>
+                    </div>
+                    
+        <button onclick="copyToClipboardclo3()" type="button" id="copyBtnclo3" class=" mt-6 w-full px-8 py-3 font-semibold rounded bg-gray-300 text-gray-800  ">Copy</button>
+         
+                </div>
+                <div
+                    class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Example 4 :</h1>
+                    <p class="mb-8 leading-relaxed"><span class="text-green-500 font-bold"> Explanation </span>: In the
+                        above code we are updating the argument of the function create_Closure with every call. Hence,
+                        we get different values of i at different index. </p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/5a445330f4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
